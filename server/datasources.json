@@ -1,12 +1,16 @@
 {
   "mongo_db": {
-    "host": "ds063879.mlab.com:63879/shareapp",
-    "port": 63879,
-    "url": "mongodb://baks:shareapp1@ds063879.mlab.com:63879/shareapp",
+    "host": "localhost",
+    "port": 27017,
     "database": "shareapp",
-    "password": "shareapp1",
     "name": "mongo_db",
-    "user": "baks",
     "connector": "mongodb"
+  },
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./files",
+    "nameConflict": "makeUnique"
   }
 }

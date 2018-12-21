@@ -28,5 +28,9 @@
   "topic": {
     "dataSource": "mongo_db",
     "public": true
+  },
+  "Container": {
+    "dataSource": "storage",
+    "public": true
   }
 }
