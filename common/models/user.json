@@ -21,7 +21,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "posts": {
+      "type": "hasMany",
+      "model": "post",
+      "foreignKey": ""
+    },
+    "subscription": {
+      "type": "hasMany",
+      "model": "topic",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

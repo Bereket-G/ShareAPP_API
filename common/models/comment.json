@@ -12,7 +12,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "post": {
+      "type": "belongsTo",
+      "model": "post",
+      "foreignKey": ""
+    },
+    "nested_comments": {
+      "type": "hasAndBelongsToMany",
+      "model": "comment",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
