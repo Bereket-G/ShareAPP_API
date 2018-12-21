@@ -12,5 +12,21 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "user": {
+    "dataSource": "mongo_db",
+    "public": true
+  },
+  "post": {
+    "dataSource": "mongo_db",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "mongo_db",
+    "public": true
+  },
+  "topic": {
+    "dataSource": "mongo_db",
+    "public": true
   }
 }
