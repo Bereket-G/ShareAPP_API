@@ -18,6 +18,12 @@
       "model": "user",
       "foreignKey": "topicId",
       "through": "subscription"
+    },
+    "topics": {
+      "type": "hasMany",
+      "model": "topic",
+      "foreignKey": "postId",
+      "through": "post_topic"
     }
   },
   "acls": [],

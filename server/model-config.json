@@ -46,5 +46,9 @@
   "subscription": {
     "dataSource": "mongo_db",
     "public": true
+  },
+  "post_topic": {
+    "dataSource": "mongo_db",
+    "public": true
   }
 }

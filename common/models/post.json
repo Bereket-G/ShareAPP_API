@@ -33,6 +33,12 @@
       "type": "hasMany",
       "model": "comment",
       "foreignKey": ""
+    },
+    "topics": {
+      "type": "hasMany",
+      "model": "topic",
+      "foreignKey": "postId",
+      "through": "post_topic"
     }
   },
   "acls": [],

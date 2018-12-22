@@ -1,0 +1,33 @@
+{
+  "name": "post_topic",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "postId": {
+      "type": "string",
+      "default": ""
+    },
+    "topicIdl": {
+      "type": "string",
+      "default": "topicId"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "topic": {
+      "type": "belongsTo",
+      "model": "topic",
+      "foreignKey": "topicId"
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
