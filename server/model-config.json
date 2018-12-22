@@ -50,5 +50,9 @@
   "post_topic": {
     "dataSource": "mongo_db",
     "public": true
+  },
+  "vote": {
+    "dataSource": "mongo_db",
+    "public": true
   }
 }

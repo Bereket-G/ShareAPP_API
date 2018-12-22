@@ -1,5 +1,5 @@
 {
-  "name": "subscription",
+  "name": "vote",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -9,16 +9,16 @@
     "userId": {
       "type": "string"
     },
-    "topicId": {
+    "postId": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "topic": {
+    "post": {
       "type": "belongsTo",
-      "model": "topic",
-      "foreignKey": "topicId"
+      "model": "post",
+      "foreignKey": "postId"
     },
     "user": {
       "type": "belongsTo",

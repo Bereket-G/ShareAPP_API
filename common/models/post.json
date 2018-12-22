@@ -19,11 +19,6 @@
     "createdAt": {
       "type": "date",
       "default": "$now"
-    },
-    "votes": {
-      "type": [
-        "string"
-      ]
     }
   },
   "validations": [],
@@ -43,6 +38,12 @@
       "model": "topic",
       "foreignKey": "postId",
       "through": "post_topic"
+    },
+    "votes": {
+      "type": "hasMany",
+      "model": "user",
+      "foreignKey": "postId",
+      "through": "vote"
     }
   },
   "acls": [],
