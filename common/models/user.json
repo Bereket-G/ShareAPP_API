@@ -6,6 +6,8 @@
     "validateUpsert": true
   },
   "properties": {
+    "realm":false,
+    "emailVerified":false,
     "firstname": {
       "type": "string",
       "required": true
@@ -17,6 +19,9 @@
       "type": "string"
     },
     "bio": {
+      "type": "string"
+    },
+    "device_id": {
       "type": "string"
     }
   },
