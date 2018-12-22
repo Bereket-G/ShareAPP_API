@@ -11,6 +11,9 @@
     },
     "postId": {
       "type": "string"
+    },
+    "upVote": {
+      "type":"boolean"
     }
   },
   "validations": [],
