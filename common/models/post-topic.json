@@ -10,9 +10,9 @@
       "type": "string",
       "default": ""
     },
-    "topicIdl": {
+    "topicId": {
       "type": "string",
-      "default": "topicId"
+      "default": ""
     }
   },
   "validations": [],
@@ -24,8 +24,8 @@
     },
     "user": {
       "type": "belongsTo",
-      "model": "user",
-      "foreignKey": "userId"
+      "model": "post",
+      "foreignKey": "postId"
     }
   },
   "acls": [],
