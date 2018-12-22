@@ -13,10 +13,11 @@
   },
   "validations": [],
   "relations": {
-    "followers": {
-      "type": "belongsTo",
+    "subscriptions": {
+      "type": "hasMany",
       "model": "user",
-      "foreignKey": ""
+      "foreignKey": "topicId",
+      "through": "subscription"
     }
   },
   "acls": [],

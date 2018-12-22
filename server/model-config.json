@@ -42,5 +42,9 @@
     "dataSource": "mongo_db",
     "public": false,
     "strict": true
+  },
+  "subscription": {
+    "dataSource": "mongo_db",
+    "public": true
   }
 }

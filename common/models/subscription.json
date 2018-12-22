@@ -1,0 +1,34 @@
+{
+  "name": "subscription",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "topicId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "topic": {
+      "type": "belongsTo",
+      "model": "topic",
+      "foreignKey": "topicId"
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

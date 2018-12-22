@@ -6,8 +6,8 @@
     "validateUpsert": true
   },
   "properties": {
-    "realm":false,
-    "emailVerified":false,
+    "realm": false,
+    "emailVerified": false,
     "firstname": {
       "type": "string",
       "required": true
@@ -32,10 +32,11 @@
       "model": "post",
       "foreignKey": ""
     },
-    "subscription": {
+    "subscriptions": {
       "type": "hasMany",
       "model": "topic",
-      "foreignKey": ""
+      "foreignKey": "userId",
+      "through": "subscription"
     }
   },
   "acls": [],
