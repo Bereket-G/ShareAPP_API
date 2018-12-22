@@ -16,6 +16,10 @@
     "file": {
       "type": "string"
     },
+    "createdAt": {
+      "type": "date",
+      "default": "$now"
+    },
     "votes": {
       "type": [
         "string"

@@ -9,6 +9,10 @@
     "text": {
       "type": "string",
       "required": true
+    },
+    "createdAt": {
+      "type": "date",
+      "default": "$now"
     }
   },
   "validations": [],
@@ -16,6 +20,11 @@
     "post": {
       "type": "belongsTo",
       "model": "post",
+      "foreignKey": ""
+    },
+    "creator": {
+      "type": "belongsTo",
+      "model": "user",
       "foreignKey": ""
     },
     "nested_comments": {

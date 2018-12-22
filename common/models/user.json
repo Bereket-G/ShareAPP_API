@@ -32,6 +32,11 @@
       "model": "post",
       "foreignKey": ""
     },
+     "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    },
     "subscriptions": {
       "type": "hasMany",
       "model": "topic",
