@@ -19,9 +19,9 @@
       "foreignKey": "topicId",
       "through": "subscription"
     },
-    "topics": {
+    "posts": {
       "type": "hasMany",
-      "model": "topic",
+      "model": "post",
       "foreignKey": "postId",
       "through": "post_topic"
     }
